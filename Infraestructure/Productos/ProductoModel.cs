@@ -14,11 +14,11 @@ namespace Infraestructure.Productos
         #region CRUD
         public void Add(Producto p)
         {
-            if(p == null)
+            if (p == null)
             {
                 throw new ArgumentException("El producto no puede ser null.");
             }
-            Add(p,ref productos);
+            Add(p, ref productos);
         }
 
         public int Update(Producto p)
@@ -178,4 +178,5 @@ namespace Infraestructure.Productos
         }
         #endregion
     }
+    
 }
